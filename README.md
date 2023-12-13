@@ -15,3 +15,11 @@ Acknowledgments
 The simulation is inspired by gravitational physics principles.
 Pygame library for providing a simple interface for creating games and simulations in Python.
 Feel free to explore and experiment with the simulation! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+This code simulates a gravitational field using a particle system in the context of a 2D environment. Here's a comprehensive journal explaining the physics and math principles involved:
+1) Newton's law of Gravitation: g = Gm₁m₂/r²
+2) Particle motion is determined by the net gravitational force acting on it. Velocity is updated based on the gravitational force applied by all masses.
+3) The trajectory of the particle is determined by the initial conditions and the continuously changing gravitational forces acting on it. This is predetermined by a 2D vector, and the resultant of all such vectors affect its trajectory
+4) If a particle is close to a massive object, it can revolve around it. The code calculates the angle and updates the particle's position to create a revolving effect.
+5) The simulation involves the calculation of particle velocities based on gravitational forces. Differential calculus, particularly derivatives, is used to determine the instantaneous rate of change of a particle's position, leading to the computation of its velocity. This enables the simulation to model the continuous and dynamic nature of particle motion in response to varying gravitational forces.
+6) When particles revolve around a massive object, the calculation of angles is involved. Trigonometric functions, which are inherently linked to calculus, help determine the angular position of a particle as it revolves. These angles are crucial in updating the position of the particle in a circular or elliptical path.
